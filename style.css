@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    grid-template: 
+    'header header header'1fr
+    'left main right'50ch/
+    1fr 2fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+}
+
+main {
+    grid-area: main;
+}
+
+left {
+    grid-area: left;
+}
+
+right {
+    grid-area: right;
+}
+
+main section {
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main section hgroup {
+    border: 2px solid rgb(114, 20, 114);
+    box-shadow: 2px 3px 5px rgb(92, 31, 92);
+    padding: 1rem;
+}
+
+main section hgroup p {
+    place-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main section hgroup i, main section hgroup h5 {
+    place-content: end;
+}
+
+.shadows i {
+    font-family: "Bokor", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}  
+
+.blade-runner i {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.glow i {
+    font-family: "Zen Tokyo Zoo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.king i {
+    font-family: "Sigmar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.twin-peaks i {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+script, title {
+    display: none;
+}
